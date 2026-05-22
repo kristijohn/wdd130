@@ -3,7 +3,7 @@
     --accent1-color: #ffed83;
     --accent2-color: #1d429b;
     --border-color: #000;
-    --h1-font-color: #fff;
+    --h1-font-color: #1d429b;
     --heading-font: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, sans-serif;
     --body-font: Roboto, Arial, sans-serif;
 }
@@ -28,6 +28,8 @@ h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
     border: 1px solid var(--border-color);
+    text-align: center;
+    background-color: var(--accent1-color);
 }
 
 nav, p, section, article {
