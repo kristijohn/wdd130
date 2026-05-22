@@ -1,8 +1,10 @@
 :root {
     --primary-color: #b64941;
-    --secondary-color: #f28e01;
+    /* --secondary-color: #f28e01; */
     --accent1-color: #ffed83;
-    /* --accent2-color: #1d429b; */
+    --accent2-color: #1d429b;
+    --border-color: #000;
+    --h1-font-color: #fff;
     --heading-font: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, sans-serif;
     --body-font: Roboto, Arial, sans-serif;
 }
@@ -26,7 +28,7 @@ header, main, footer {
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
-    border: 1px solid #000;
+    border: 1px solid var(--border-color);
 }
 
 nav, p, section, article {
@@ -56,15 +58,15 @@ h1 {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: #fff; 
+    color: var(--h1-font-color); 
 }
 
 .hero article {
     position: absolute;
     bottom: 1px;
     right: 15px;
-    background: radial-gradient(#eee, #ffed83);
-    border: 1px solid #000;
+    background: radial-gradient(#eee, var(--accent1-color));
+    border: 1px solid var(--border-color);
     padding: 0.65rem;
     opacity: 0.9;
 
