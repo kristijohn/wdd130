@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #b64941;
+    --primary-color: #871e17;
     --accent1-color: #ffed83;
-    --accent2-color: #1d429b;
+    --accent2-color: #1e387a;
     --border-color: #000;
-    --h1-font-color: #1d429b;
+    --h1-font-color: #1e387a;
     --heading-font: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, sans-serif;
     --body-font: Roboto, Arial, sans-serif;
 }
@@ -19,22 +19,62 @@ body {
     color: var(--accent2-color);
 }
 
-header, main, footer {
-    width: 840px;
+header {
+    background-color: var(--secondary-color);
+    color: white;
+    display: grid;
+    grid-template-columns: 300px auto;
+    align-items: center;
+}
+
+header img {
+    width: 120px;
+    display: grid;
+    justify-self: center;
+    align-self: center;
+}
+
+main {
     margin: 0 auto;
 }
 
-h1, h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-    border: 1px solid var(--border-color);
-    text-align: center;
-    background-color: var(--accent1-color);
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-nav, p, section, article {
+h1 {
+    color: var(--headline-color-on-color);
+    font-family: var(--heading-font);
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+nav,
+p,
+section,
+article {
     margin: 16px;
     padding: 8px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav a {
+    text-align: center;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 35px;
 }
 
 .socialmedia a {
@@ -42,38 +82,62 @@ nav, p, section, article {
 }
 
 .hero {
+    display: grid;
+    grid-template-columns: 15% auto 15%;
     position: relative;
 }
 
-.hero img {
+.hero-img-box {
+    grid-column: 1/span 3;
+    grid-row: 1/span 2;
     display: block;
+}
+
+.hero img {
     width: 100%;
     height: auto;
 }
 
+.hero-msg {
+    display: grid;
+    grid-template-rows: 20% auto 20%;
+    grid-column: 2;
+    grid-row: 1/3;
+    height: 100%;
+}
+
 h1 {
-    position: absolute;
     top: 20px;
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: var(--h1-font-color); 
+    color: var(--primary-color);
 }
 
 .hero article {
-    position: absolute;
-    bottom: 1px;
-    right: 15px;
     background: radial-gradient(#eee, var(--accent1-color));
     border: 1px solid var(--border-color);
     padding: 0.65rem;
     opacity: 0.9;
-
+    justify-self: center;
+    align-self: center;
 }
 
 .hero article img {
     float: right;
     width: 125px;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 40% auto 40%;
+}
+
+.adventure {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+figcaption {
+    justify-self: center;
 }
