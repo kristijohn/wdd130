@@ -38,10 +38,9 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid black;
 }
 
-footer nav {
+.socialmedia {
     text-decoration: none;
     gap: 10px;
 }
@@ -49,7 +48,6 @@ footer nav {
 footer p {
     flex: 2;
     text-align: center;
-    border: 1px solid black;
 }
 
 h1 {
@@ -151,10 +149,8 @@ figcaption {
 
 .history-text {
     grid-column: span 2;
-    border: 1px solid black;
 }
 
 .main-container figure {
     justify-self: center;
-    border: 1px solid black;
 }
