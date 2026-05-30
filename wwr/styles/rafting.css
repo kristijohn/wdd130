@@ -1,9 +1,9 @@
 :root {
     --primary-color: #871e17;
-    --accent1-color: #ffed83;
+    --accent1-color: #d2e3ea;
     --accent2-color: #1e387a;
     --border-color: #000;
-    --h1-font-color: #fff;
+    --h1-font-color: #daf0f1;
     --heading-font: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, sans-serif;
     --body-font: Roboto, Arial, sans-serif;
 }
