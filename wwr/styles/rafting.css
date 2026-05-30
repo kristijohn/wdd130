@@ -3,7 +3,7 @@
     --accent1-color: #d2e3ea;
     --accent2-color: #1e387a;
     --border-color: #000;
-    --h1-font-color: #daf0f1;
+    --h1-font-color: #b0293e;
     --heading-font: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, sans-serif;
     --body-font: Roboto, Arial, sans-serif;
 }
@@ -87,7 +87,6 @@ nav {
 }
 
 .hero {
-    background-color: #4c565e;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     width: 100%;
