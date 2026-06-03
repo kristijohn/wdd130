@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.125rem;
+    color: #212529;
+    background-color: #f8f9fa;
+}
+
+header {
+    margin-top: 0;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+footer {
+    margin: 1rem auto 0;
+    width: 550px;
+    text-align: center;
+    font-size: 0.7em;
+    color: #777;
+    border-top: 1px solid #ccc;
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+form {
+    width: 550px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: 0.5rem;
+    background-color: #cdf8f9;
+    display: grid;
+}
+
+input[type="checkbox"] {
+    width: 1.2rem;
+    height: 1.2rem;
+    cursor: pointer;
+    place-items: center;
+}
+
+button {
+    width: 100px;
+    padding: 10px;
+    background-color: #0b0971;
+    color: #f8f9fa;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #f5a625;
+    color: #000;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
