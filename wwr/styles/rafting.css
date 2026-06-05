@@ -66,6 +66,31 @@ h2 {
     text-align: center;
 }
 
+.about {
+    position: relative;
+}
+
+.about h1 {
+    font-family: var(--heading-font);
+    font-size: 2em;
+    text-align: center;
+    color: black;
+    position: relative;
+    top: 0;
+}
+
+.about h2 {
+    font-family: var(--heading-font);
+    font-size: 1em;
+    text-align: center;
+    color: black;
+}
+
+.about h2 p {
+    margin: 0;
+    padding: 0;
+}
+
 nav,
 p,
 section,
@@ -147,4 +172,66 @@ figcaption {
 
 .main-container figure {
     justify-self: center;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    grid-gap: 30px;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+header nav a {
+    border: 2px solid black;
+    width: 150px;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--accent2-color);
+    color: #f8f9fa;
+    border-radius: 10px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--h1-font-color);
+    color: #f8f9fa;
+}
+
+.employee-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    grid-gap: 30px;
+    margin-top: 40px;
+
+}
+
+.employee-container h2 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.column1 {
+    grid-template-columns: 1fr 3fr;
+}
+
+fieldset {
+    border: none;
 }
