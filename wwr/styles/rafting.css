@@ -183,7 +183,7 @@ figcaption {
     grid-gap: 30px;
 }
 
-.map {
+.map iframe {
     width: 100%;
     height: 100%;
 }
