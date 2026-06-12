@@ -1,5 +1,6 @@
 :root {
     --primary-color: #871e17;
+    --secondary-color: #E7BC15;
     --accent1-color: #d2e3ea;
     --accent2-color: #1e387a;
     --border-color: #000;
@@ -20,7 +21,7 @@ body {
 }
 
 header {
-    background-color: var(--secondary-color);
+    background-color: white;
     color: white;
     display: grid;
     grid-template-columns: 300px auto;
@@ -43,7 +44,7 @@ header nav a {
     border-radius: 15px;
     font-size: 18px;
     color: var(--primary-color);
-    background-color: var(--accent1-color);
+    background-color: #E7BC15;
     font-weight: bold;
 }
 
@@ -72,7 +73,7 @@ h1 {
     width: 100%;
     text-align: center;
     /*color: var(--h1-font-color);*/
-    color: #E7BC15;
+    color: var(--secondary-color);
     position: absolute;
     font-family: "Bonfire";
 }
@@ -81,6 +82,22 @@ h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
     text-align: center;
+}
+
+h3 {
+    font-size: 3em;
+    padding: 30px;
+    text-align: center;
+    color: var(--primary-color);
+    font-family: "Bonfire";
+}
+
+h4 {
+    font-size: 2em;
+    padding-top: 50px;
+    text-align: center;
+    color: var(--primary-color);
+    font-family: "Bonfire";
 }
 
 .about {
@@ -229,6 +246,54 @@ button:hover {
     color: #f8f9fa;
 }
 
+table {
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+th,
+td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+    text-align: center;
+}
+
+.no-outline th,
+.no-outline td {
+    border: none;
+}
+
+table a {
+    text-decoration: none;
+}
+
+table .button-box {
+    justify-self: center;
+    position: relative;
+    margin: 15px;
+}
+
+.double-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    grid-gap: 30px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.double-container h4 {
+    grid-column: 1/3;
+}
+
+.double-container p {
+    margin: 0px;
+    padding: 0px;
+}
+
 .triple-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -283,7 +348,7 @@ fieldset {
 }
 
 .subscribe-banner {
-    background-color: var(--accent1-color);
+    background-color: var(--primary-color);
     margin: 20px 0;
     padding: 30px 0;
 }
