@@ -22,7 +22,6 @@ body {
 
 header {
     background-color: white;
-    color: white;
     display: grid;
     grid-template-columns: 300px auto;
     align-items: center;
