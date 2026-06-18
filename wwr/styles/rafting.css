@@ -283,6 +283,10 @@ table .button-box {
     text-align: center;
 }
 
+.triple-container p {
+    grid-column: 1/4;
+}
+
 .triple-container h2 {
     grid-column: 1/4;
     grid-row: 1/2;
